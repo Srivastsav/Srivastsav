@@ -15,7 +15,13 @@ section {
   flex-direction: column;
   justify-content: center;
 }
+.hero p {
+  max-width: 800px;
+}
 
+.hero h1 {
+  color: #f8fafc;
+}
 h1 {
   font-size: 52px;
   max-width: 900px;
