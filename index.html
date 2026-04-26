@@ -1,106 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Sri Vastsav Systems Lab</title>
+  <title>Sai Sri Vastsav Kokkirala Systems Lab</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header class="hero">
-    <div class="badge">Sai Systems Lab</div>
-    <h1>Workflow Automation & Systems Engineer</h1>
-    <p>
-      I design human-to-system workflows that automate approvals, optimize routing decisions,
-      and connect enterprise systems into measurable operational pipelines.
-    </p>
-  </header>
+  <main class="page">
 
-  <section>
-    <h2>System Workflow Model</h2>
+    <section class="hero">
+      <p class="eyebrow">Sai Sri Vastsav Kokkirala Systems Lab/ Workflow Control Center</p>
+      <h1>Workflow Automation & Systems Engineer</h1>
+      <p class="hero-text">
+        I design human-to-system workflows that convert manual business processes into
+        structured automation, routing logic, integrations, analytics, and operational feedback.
+      </p>
+    </section>
 
-    <div class="workflow">
-      <div class="node">Human Input</div>
-      <div class="arrow">→</div>
-      <div class="node">Workflow Logic</div>
-      <div class="arrow">→</div>
-      <div class="node">Decision Routing</div>
-      <div class="arrow">→</div>
-      <div class="node">System Output</div>
-      <div class="arrow">→</div>
-      <div class="node">Analytics</div>
-    </div>
-  </section>
+    <section class="workflow-board">
 
-  <section>
-    <h2>Project Systems</h2>
-
-    <div class="system-card">
-      <div class="card-header">
-        <span>01</span>
-        <h3><a href="https://github.com/Srivastsav/hr-workflow-automation-system" target="_blank">Enterprise HR Workflow Automation System</a></h3>
-      </div>
-      <div class="mini-flow">
-        <span>Leave Request</span>
-        <span>Approval Chain</span>
-        <span>Teams + Email</span>
-        <span>Dataverse / SharePoint</span>
-        <span>Power BI</span>
-      </div>
-    </div>
-
-    <div class="system-card">
-      <div class="card-header">
-        <span>02</span>
-        <h3><a href="https://github.com/Srivastsav/contact-center-routing-optimization-system" target="_blank">Contact Center Routing Optimization System</a></h3>
-      </div>
-      <div class="mini-flow">
-        <span>Call / Chat</span>
-        <span>Architect Flow</span>
-        <span>Skills + Queue</span>
-        <span>Agent Routing</span>
-        <span>AHT / FCR</span>
-      </div>
-    </div>
-
-    <div class="system-card">
-      <div class="card-header">
-        <span>03</span>
-        <h3><a href="https://github.com/Srivastsav/api-workflow-integration-system" target="_blank">API Workflow Integration System</a></h3>
-      </div>
-      <div class="mini-flow">
-        <span>User Request</span>
-        <span>API</span>
-        <span>Validation</span>
-        <span>Storage</span>
-        <span>Response</span>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Experience Layers</h2>
-
-    <div class="layers">
-      <div>
-        <h3>Automation Layer</h3>
-        <p>Power Platform HR workflow system with approvals, notifications, data storage, and analytics.</p>
+      <div class="workflow-node">
+        <div class="node-label">01 / INPUT</div>
+        <h2>Human Request Layer</h2>
+        <p>Employee leave requests, customer interactions, system failures, and operational events enter the workflow.</p>
+        <div class="tags">
+          <span>Forms</span>
+          <span>Calls</span>
+          <span>Chats</span>
+          <span>Logs</span>
+        </div>
       </div>
 
-      <div>
-        <h3>Routing Layer</h3>
-        <p>Genesys Cloud workflow contribution across call/chat routing, queues, skills, and testing.</p>
+      <div class="connector"></div>
+
+      <div class="workflow-node">
+        <div class="node-label">02 / AUTOMATION ENGINE</div>
+        <h2>
+          <a href="https://github.com/Srivastsav/hr-workflow-automation-system" target="_blank">
+            HR Workflow Automation System
+          </a>
+        </h2>
+        <p>Leave requests move through approval workflows, notifications, data storage, and Power BI analytics.</p>
+        <div class="flow-line">
+          <span>Request</span>
+          <span>HR</span>
+          <span>Lead</span>
+          <span>Manager</span>
+          <span>Analytics</span>
+        </div>
       </div>
 
-      <div>
-        <h3>Operations Layer</h3>
-        <p>Production systems troubleshooting, server diagnostics, firmware issues, and debug log analysis.</p>
-      </div>
-    </div>
-  </section>
+      <div class="connector"></div>
 
-  <footer>
-    <p>Continuously evolving automation systems.</p>
-  </footer>
+      <div class="workflow-node">
+        <div class="node-label">03 / ROUTING ENGINE</div>
+        <h2>
+          <a href="https://github.com/Srivastsav/contact-center-routing-optimization-system" target="_blank">
+            Contact Center Routing Optimization System
+          </a>
+        </h2>
+        <p>Customer interactions are routed through Architect-style flows, queues, skills, and SLA validation.</p>
+        <div class="flow-line">
+          <span>Call/Chat</span>
+          <span>Flow</span>
+          <span>Skill</span>
+          <span>Queue</span>
+          <span>Agent</span>
+        </div>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="workflow-node">
+        <div class="node-label">04 / INTEGRATION LAYER</div>
+        <h2>
+          <a href="https://github.com/Srivastsav/api-workflow-integration-system" target="_blank">
+            API Workflow Integration System
+          </a>
+        </h2>
+        <p>A basic API workflow demonstrates request intake, validation, storage, and response handling.</p>
+        <div class="flow-line">
+          <span>User</span>
+          <span>API</span>
+          <span>Validate</span>
+          <span>Store</span>
+          <span>Respond</span>
+        </div>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="workflow-node output-node">
+        <div class="node-label">05 / OUTPUT</div>
+        <h2>Operational Systems Thinking</h2>
+        <p>
+          My portfolio connects automation ownership, routing contribution, API implementation,
+          and production troubleshooting into one workflow engineering identity.
+        </p>
+        <div class="tags">
+          <span>Automation</span>
+          <span>Routing</span>
+          <span>Integration</span>
+          <span>Reliability</span>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      Continuously evolving automation systems.
+    </footer>
+
+  </main>
 
 </body>
 </html>
