@@ -29,11 +29,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   color: var(--text-main);
   background:
-    radial-gradient(circle at 18% 12%, rgba(249,115,22,0.16), transparent 26%),
-    radial-gradient(circle at 82% 18%, rgba(127,29,29,0.16), transparent 30%),
+    radial-gradient(circle at 18% 12%, rgba(249,115,22,0.18), transparent 26%),
+    radial-gradient(circle at 82% 18%, rgba(185,28,28,0.28), transparent 30%),
+    radial-gradient(circle at 15% 35%, rgba(185,28,28,0.12), transparent 40%),
     radial-gradient(circle at 65% 88%, rgba(30,64,175,0.18), transparent 36%),
-    radial-gradient(circle at 50% 50%, rgba(15,23,42,0.72), transparent 55%),
-    linear-gradient(135deg, #00030a 0%, #010716 38%, #020617 68%, #000208 100%);
+    radial-gradient(circle at 50% 50%, rgba(0,0,0,0.85), transparent 55%),
+    linear-gradient(135deg, #000000 0%, #0f0620 38%, #0a0314 68%, #000000 100%);
   overflow-x: hidden;
 }
 
@@ -43,7 +44,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.22;
+  opacity: 0.18;
   background-image:
     radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1.5px),
     radial-gradient(circle, rgba(147,197,253,0.55) 1px, transparent 1.5px),
@@ -62,7 +63,7 @@ body::after {
     radial-gradient(circle at 70% 22%, rgba(249,115,22,0.10), transparent 42%),
     radial-gradient(circle at 25% 72%, rgba(37,99,235,0.12), transparent 48%),
     radial-gradient(circle at 50% 50%, rgba(0,0,0,0.68), transparent 62%);
-  filter: blur(100px);
+  filter: blur(120px);
 }
 
 a {
@@ -92,6 +93,7 @@ a {
   top: 0;
   z-index: 50;
 }
+
 .logo {
   padding: 6px 12px;
   border-radius: 14px;
@@ -151,9 +153,10 @@ main {
 
 .section,
 .workflow-section,
+.failure-section,
 .tech-section,
 .contact-section {
-  margin-top: 46px;
+  margin-top: 64px;
   scroll-margin-top: 100px;
 }
 
@@ -336,8 +339,6 @@ main {
     radial-gradient(circle at 30% 40%, rgba(249,115,22,0.16), transparent 60%);
 }
 
-
-
 .hero-card-text {
   position: absolute;
   left: 34px;
@@ -364,7 +365,7 @@ main {
 }
 
 .section-head {
-  margin-bottom: 24px;
+  margin-bottom: 32px;
 }
 
 .section-head span {
@@ -519,23 +520,78 @@ main {
   font-weight: 800;
 }
 
+.workflow-rail {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  margin: 24px 0 64px;
+  padding: 26px;
+  border-radius: 26px;
+  background: rgba(24, 18, 30, 0.38);
+  border: 1px solid rgba(255, 106, 26, 0.16);
+  backdrop-filter: blur(18px);
+  box-shadow:
+    0 0 50px rgba(255,106,26,0.08),
+    inset 0 0 30px rgba(255,255,255,0.025);
+}
+
+.rail-node {
+  padding: 12px 18px;
+  border-radius: 999px;
+  color: var(--gold);
+  font-size: 13px;
+  font-weight: 900;
+  border: 1px solid rgba(255, 106, 26, 0.32);
+  background: rgba(5, 3, 10, 0.58);
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.rail-node:hover {
+  border-color: rgba(249,115,22,0.65);
+  box-shadow: 0 0 16px rgba(249,115,22,0.15);
+}
+
+.rail-node.decision {
+  border-radius: 14px;
+  transform: rotate(45deg);
+  padding: 16px;
+}
+
+.rail-node.decision::first-letter {
+  transform: rotate(-45deg);
+}
+
+.rail-line {
+  height: 1px;
+  background: linear-gradient(90deg, rgba(255,106,26,0.18), rgba(255,179,71,0.7), rgba(255,106,26,0.18));
+  box-shadow: 0 0 12px rgba(255,106,26,0.35);
+}
+
 .workflow-map {
   display: grid;
   grid-template-columns: 1fr auto 1fr auto 1fr auto 1fr auto 1fr;
-  gap: 14px;
+  gap: 18px;
   align-items: stretch;
-  padding: 28px;
+  padding: 32px;
   position: relative;
   overflow: hidden;
 }
 
 .workflow-node {
   position: relative;
-  padding: 20px;
+  padding: 24px;
   border-radius: 20px;
   background: rgba(15, 23, 42, 0.44);
   border: 1px solid rgba(245, 158, 11, 0.16);
   overflow: hidden;
+  transition: 0.2s ease;
+}
+
+.workflow-node:hover {
+  border-color: rgba(249,115,22,0.45);
+  box-shadow: 0 0 20px rgba(249,115,22,0.12);
 }
 
 .workflow-node strong {
@@ -571,6 +627,11 @@ main {
   }
 }
 
+.failure-section {
+  margin-top: 64px;
+  margin-bottom: 64px;
+}
+
 .failure-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -581,6 +642,12 @@ main {
   position: relative;
   overflow: hidden;
   padding: 28px;
+  transition: 0.2s ease;
+}
+
+.failure-card:hover {
+  border-color: rgba(249,115,22,0.45);
+  box-shadow: 0 0 24px rgba(249,115,22,0.12);
 }
 
 .failure-card span {
@@ -617,6 +684,12 @@ main {
   position: relative;
   overflow: hidden;
   padding: 24px;
+  transition: 0.2s ease;
+}
+
+.experience-grid div:hover {
+  border-color: rgba(249,115,22,0.45);
+  box-shadow: 0 0 20px rgba(249,115,22,0.12);
 }
 
 .experience-grid h3 {
@@ -644,8 +717,14 @@ main {
 .timeline-item {
   position: relative;
   overflow: hidden;
-  padding: 24px 28px;
+  padding: 28px;
   border-left: 3px solid rgba(249,115,22,0.75);
+  transition: 0.2s ease;
+}
+
+.timeline-item:hover {
+  border-left-color: rgba(249,115,22,0.95);
+  box-shadow: 0 0 24px rgba(249,115,22,0.12);
 }
 
 .timeline-date,
@@ -690,7 +769,7 @@ main {
 }
 
 .tech-grid {
-  padding: 28px;
+  padding: 32px;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   gap: 18px;
@@ -744,6 +823,12 @@ main {
   position: relative;
   overflow: hidden;
   padding: 28px;
+  transition: 0.2s ease;
+}
+
+.education-card:hover {
+  border-color: rgba(249,115,22,0.45);
+  box-shadow: 0 0 24px rgba(249,115,22,0.12);
 }
 
 .education-card h3 {
@@ -762,6 +847,12 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 28px;
+  transition: 0.2s ease;
+}
+
+.contact-section:hover {
+  border-color: rgba(249,115,22,0.45);
+  box-shadow: 0 0 30px rgba(249,115,22,0.12);
 }
 
 .contact-section p {
@@ -803,23 +894,24 @@ main {
 
 @media (max-width: 900px) {
   .workflow-rail {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 
-.rail-line {
-  width: 1px;
-  height: 28px;
-  margin: 0 auto;
-}
+  .rail-line {
+    width: 1px;
+    height: 28px;
+    margin: 0 auto;
+  }
 
-.rail-node {
-  text-align: center;
-}
+  .rail-node {
+    text-align: center;
+  }
 
-.rail-node.decision {
-  transform: none;
-  border-radius: 999px;
-}
+  .rail-node.decision {
+    transform: none;
+    border-radius: 999px;
+  }
+
   nav {
     display: none;
   }
@@ -901,46 +993,4 @@ main {
   .contact-section h2 {
     font-size: 32px;
   }
-}
-.workflow-rail {
-  display: grid;
-  grid-template-columns: auto 1fr auto 1fr auto 1fr auto 1fr auto;
-  align-items: center;
-  gap: 14px;
-  margin: 10px 0 54px;
-  padding: 22px;
-  border-radius: 26px;
-  background: rgba(24, 18, 30, 0.38);
-  border: 1px solid rgba(255, 106, 26, 0.16);
-  backdrop-filter: blur(18px);
-  box-shadow:
-    0 0 50px rgba(255,106,26,0.08),
-    inset 0 0 30px rgba(255,255,255,0.025);
-}
-
-.rail-node {
-  padding: 12px 18px;
-  border-radius: 999px;
-  color: var(--gold);
-  font-size: 13px;
-  font-weight: 900;
-  border: 1px solid rgba(255, 106, 26, 0.32);
-  background: rgba(5, 3, 10, 0.58);
-  white-space: nowrap;
-}
-
-.rail-node.decision {
-  border-radius: 14px;
-  transform: rotate(45deg);
-  padding: 16px;
-}
-
-.rail-node.decision::first-letter {
-  transform: rotate(-45deg);
-}
-
-.rail-line {
-  height: 1px;
-  background: linear-gradient(90deg, rgba(255,106,26,0.18), rgba(255,179,71,0.7), rgba(255,106,26,0.18));
-  box-shadow: 0 0 12px rgba(255,106,26,0.35);
 }
