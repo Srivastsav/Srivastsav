@@ -37,6 +37,8 @@ Building reliable systems across hardware validation, production testing, workfl
 
 ## 🧠 Operating Model
 
+## 🧠 Operating Model
+
 ```mermaid
 flowchart LR
     A[System Input] --> B[Test & Validation]
@@ -46,7 +48,7 @@ flowchart LR
     E --> F[QMS Documentation]
     C -- No --> G[Final Validation]
     G --> H[Ready for Release]
-
+```
     🛠 Tech Stack
 <p align="center"> <img src="https://skillicons.dev/icons?i=python,mysql,gcp,linux,powershell,git,github,azure" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Power%20BI-Analytics-yellow?style=for-the-badge&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/Tableau-Dashboards-blue?style=for-the-badge&logo=tableau&logoColor=white" /> <img src="https://img.shields.io/badge/REST%20APIs-Integration-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/OAuth2-Security-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/ServiceNow-Ticketing-green?style=for-the-badge&logo=servicenow&logoColor=white" /> <img src="https://img.shields.io/badge/Jira-Tracking-blue?style=for-the-badge&logo=jira&logoColor=white" /> </p>
 
