@@ -39,7 +39,7 @@ Cloud & Data Processing
     ↓
 Reporting & System Visibility
 ```
-
+---
 ## 🧠 What I Work With
 
 ```text
@@ -50,7 +50,7 @@ Integration         → REST APIs, OAuth2
 Data                → SQL, Python, dashboards
 Cloud               → GCP IAM, compute, monitoring
 ```
-
+---
 ## 🚀 Work Highlights
 
 ```text
@@ -60,8 +60,8 @@ Cloud               → GCP IAM, compute, monitoring
 → Data pipelines and reporting using Python, SQL, and BI tools  
 → Debugging and root cause analysis across hardware and system layers
 ```
-
-##🧩 Experience
+---
+## 🧩 Experience
 
 ```text
 2026 – Present     Quanta
@@ -80,10 +80,7 @@ Cloud               → GCP IAM, compute, monitoring
                   Systems Validation Engineer
 ```
 
-##🌐 Connect
-
-```text
+## 🌐 Connect
 <p align="center"> <a href="https://srivastsav.github.io/Srivastsav/">Portfolio</a> • <a href="https://linkedin.com/in/sai-k-a97621388">LinkedIn</a> • <a href="mailto:saisrivastsav7@gmail.com">Email</a> </p>
-```
 
                   
