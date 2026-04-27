@@ -38,23 +38,32 @@ Workflow Automation & Integration
 Cloud & Data Processing
     ↓
 Reporting & System Visibility
+```
 
-🧠 What I Work With
+## 🧠 What I Work With
+
+```text
 Systems Testing     → Hardware diagnostics, firmware validation, QMS tracking
 Debugging           → Linux logs, failure tracing, RCA
 Automation          → Workflow design, low-code systems
 Integration         → REST APIs, OAuth2
 Data                → SQL, Python, dashboards
 Cloud               → GCP IAM, compute, monitoring
+```
 
-🚀 Work Highlights
+## 🚀 Work Highlights
+
+```text
 → Enterprise server testing and validation in production environments  
 → Workflow automation using Genesys Cloud and low-code platforms  
 → API-based system integrations with secure authentication  
 → Data pipelines and reporting using Python, SQL, and BI tools  
-→ Debugging and root cause analysis across hardware and system layers  
+→ Debugging and root cause analysis across hardware and system layers
+```
 
-🧩 Experience
+##🧩 Experience
+
+```text
 2026 – Present     Quanta
                   Production Test Engineer (Systems Testing & Validation)
 
@@ -69,8 +78,11 @@ Cloud               → GCP IAM, compute, monitoring
 
 2021 – 2022        Navstar Integrated Systems
                   Systems Validation Engineer
+```
 
-🌐 Connect
+##🌐 Connect
+
+```text
 <p align="center"> <a href="https://srivastsav.github.io/Srivastsav/">Portfolio</a> • <a href="https://linkedin.com/in/sai-k-a97621388">LinkedIn</a> • <a href="mailto:saisrivastsav7@gmail.com">Email</a> </p>
 ```
 
