@@ -1,11 +1,11 @@
 <h1 align="center">Sai Sri Vastsav Kokkirala</h1>
 
 <h3 align="center">
-Test Engineer • Systems Validation • Workflow Automation • Integration
+Production Test Engineer • Systems Validation • Workflow Automation • Integration
 </h3>
 
 <p align="center">
-Building reliable systems across hardware validation, production testing, workflow automation, APIs, cloud, and data.
+I design and validate systems across hardware testing, firmware validation, workflow automation, APIs, cloud, and data.
 </p>
 
 <p align="center">
@@ -22,60 +22,56 @@ Building reliable systems across hardware validation, production testing, workfl
 
 ---
 
-## 🧭 Systems Dashboard
+## 🧭 Systems Focus
 
-| Area | Focus |
-|---|---|
-| 🛠 Current Role | Production Testing & Systems Validation |
-| ⚙️ Core Strength | Hardware diagnostics, firmware validation, failure analysis |
-| 🔗 Integration Layer | REST APIs, OAuth2, workflow automation |
-| ☁️ Cloud Layer | GCP IAM, Compute Engine, Monitoring |
-| 📊 Data Layer | Python, SQL, Power BI, Tableau |
-| 🧪 Validation Layer | Test logs, QMS documentation, root cause analysis |
-
----
-
-
-## 🧠 Operating Model
-
-```mermaid
-flowchart LR
-    A[System Input] --> B[Test & Validation]
-    B --> C{Issue Found?}
-    C -- Yes --> D[Debug Logs]
-    D --> E[Root Cause Analysis]
-    E --> F[QMS Documentation]
-    C -- No --> G[Final Validation]
-    G --> H[Ready for Release]
-```
-    🛠 Tech Stack
-<p align="center"> <img src="https://skillicons.dev/icons?i=python,mysql,gcp,linux,powershell,git,github,azure" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Power%20BI-Analytics-yellow?style=for-the-badge&logo=powerbi&logoColor=black" /> <img src="https://img.shields.io/badge/Tableau-Dashboards-blue?style=for-the-badge&logo=tableau&logoColor=white" /> <img src="https://img.shields.io/badge/REST%20APIs-Integration-red?style=for-the-badge" /> <img src="https://img.shields.io/badge/OAuth2-Security-orange?style=for-the-badge" /> <img src="https://img.shields.io/badge/ServiceNow-Ticketing-green?style=for-the-badge&logo=servicenow&logoColor=white" /> <img src="https://img.shields.io/badge/Jira-Tracking-blue?style=for-the-badge&logo=jira&logoColor=white" /> </p>
-
-
-🚀 Featured Systems
-Project	What It Shows
-API Workflow Integration System	REST API design, validation, logging, and workflow reliability
-HR Workflow Automation System	Power Platform, Dataverse, SharePoint, approval workflows
-Operational Troubleshooting Framework	QMS records, debug logs, failure triage, root cause analysis
-Contact Center Routing Optimization	Genesys Cloud Architect, routing logic, workflow configuration
-
-📊 GitHub Activity
-<p align="center"> <img src="https://github-readme-stats.vercel.app/api?username=Srivastsav&show_icons=true&theme=radical&hide_border=true" /> </p> <p align="center"> <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Srivastsav&layout=compact&theme=radical&hide_border=true" /> </p>
-
-
-🎯 Professional Positioning
-
-I work at the intersection of:
-
+```text
 Hardware Systems
     ↓
 Testing & Validation
     ↓
-Debugging & Root Cause Analysis
+Debugging & Failure Analysis
     ↓
-Workflow Automation
+Root Cause Identification
     ↓
-APIs, Cloud, Data, and Reporting
+Workflow Automation & Integration
+    ↓
+Cloud & Data Processing
+    ↓
+Reporting & System Visibility
+
+🧠 What I Work With
+Systems Testing     → Hardware diagnostics, firmware validation, QMS tracking
+Debugging           → Linux logs, failure tracing, RCA
+Automation          → Workflow design, low-code systems
+Integration         → REST APIs, OAuth2
+Data                → SQL, Python, dashboards
+Cloud               → GCP IAM, compute, monitoring
+
+🚀 Work Highlights
+→ Enterprise server testing and validation in production environments  
+→ Workflow automation using Genesys Cloud and low-code platforms  
+→ API-based system integrations with secure authentication  
+→ Data pipelines and reporting using Python, SQL, and BI tools  
+→ Debugging and root cause analysis across hardware and system layers  
+
+🧩 Experience
+2026 – Present     Quanta
+                  Production Test Engineer (Systems Testing & Validation)
+
+2025 – 2026        CORtracker 360
+                  Information Systems Engineer
+
+2024 – 2025        Career Nexta
+                  Information Systems & Data Developer
+
+2022               CyberEye Research Labs
+                  Low-Code Application Developer
+
+2021 – 2022        Navstar Integrated Systems
+                  Systems Validation Engineer
 
 🌐 Connect
-<p align="center"> <a href="https://srivastsav.github.io/Srivastsav/">Portfolio</a> • <a href="https://linkedin.com/in/sai-k-a97621388">LinkedIn</a> • <a href="mailto:saisrivastsav7@gmail.com">Email</a> </p> ```
+<p align="center"> <a href="https://srivastsav.github.io/Srivastsav/">Portfolio</a> • <a href="https://linkedin.com/in/sai-k-a97621388">LinkedIn</a> • <a href="mailto:saisrivastsav7@gmail.com">Email</a> </p>
+```
+
+                  
