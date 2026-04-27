@@ -35,7 +35,6 @@ Building reliable systems across hardware validation, production testing, workfl
 
 ---
 
-## 🧠 Operating Model
 
 ## 🧠 Operating Model
 
