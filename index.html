@@ -138,6 +138,7 @@
         
         <!-- PROJECTS_START -->
 
+        
         <!-- PROJECT_CARD_START: 01-n8n-portfolio-publisher -->
 
         <!-- CASE FILE 01 -->
@@ -152,27 +153,30 @@
           <h3>AI Portfolio Publisher & Website Updater v2</h3>
 
           <p class="case-problem">
-            Manual portfolio updates are repetitive and time-consuming.
+            Manual portfolio updates are repetitive and time-consuming, involving documentation, GitHub uploads, and website edits.
           </p>
 
           <ul class="case-structure">
-            <li>Form submission captures project details.</li>
-            <li>Gemini generates structured portfolio content.</li>
-            <li>n8n creates README, setup guide, workflow summary, LinkedIn post, and workflow JSON files.</li>
-            <li>Project files are uploaded to the GitHub portfolio repository.</li>
-            <li>The portfolio website index.html file is retrieved and decoded.</li>
-            <li>A project card is generated and inserted or updated using marker-based upsert logic.</li>
+            <li>Form submission captures structured project details.</li>
+            <li>A Code node prepares a controlled Gemini API request.</li>
+            <li>Gemini generates portfolio-ready content in structured JSON.</li>
+            <li>A parser extracts the AI output and keeps the original form data.</li>
+            <li>n8n generates README.md, setup-guide.md, workflow-summary.md, linkedin-post.md, and workflow.json files.</li>
+            <li>The project files are uploaded to the n8n portfolio GitHub repository.</li>
+            <li>The workflow retrieves the portfolio website index.html file from GitHub and decodes the base64 content.</li>
+            <li>A website project card is generated using AI-supported content.</li>
+            <li>The card is inserted or updated in the System Case Files section using project-specific HTML markers.</li>
             <li>A new GitHub branch is created.</li>
-            <li>The website update is committed through the GitHub API.</li>
-            <li>A pull request is created for manual review and merge.</li>
+            <li>The updated index.html file is committed through the GitHub API.</li>
+            <li>A pull request is created so the website update can be reviewed and merged manually.</li>
           </ul>
 
           <p class="case-impact">
-            Reduced manual effort, standardized documentation, and streamlined website updates with reviewable pull requests.
+            Significantly reduces manual effort, standardizes documentation, prevents duplicate website entries, and ensures a controlled review process for website updates.
           </p>
 
           <p class="case-failure">
-            Error handling in n8n and GitHub pull requests for review and rollback.
+            Error handling is implemented for API calls and file operations. The GitHub pull request mechanism allows for manual review and correction of website updates before merging.
           </p>
 
           <div class="chips">
@@ -183,6 +187,7 @@
         </a>
 
         <!-- PROJECT_CARD_END: 01-n8n-portfolio-publisher -->
+
 
 
        
